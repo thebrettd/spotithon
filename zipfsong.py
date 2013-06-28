@@ -25,7 +25,8 @@ for track_number in range(int(m)):
 printed = 0
 for song in reversed(sorted(songs.iterkeys())):
     for curr_song in songs[song]:
-        print curr_song
-        printed += 1
         if printed == n:
             exit()
+        else:
+            print curr_song
+            printed += 1
